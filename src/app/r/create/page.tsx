@@ -47,6 +47,9 @@ const Page: FC = () => {
         }
       }
     },
+    onSuccess: (data) => {
+      router.push(`/r/${data}`);
+    },
   });
 
   return (
