@@ -43,6 +43,7 @@ const PostFeed = ({ initialPosts, subredditName }: PostFeedProps) => {
 
   useEffect(() => {
     if (entry?.isIntersecting) {
+      fetchNextPage();
     }
   }, [entry, fetchNextPage]);
 
