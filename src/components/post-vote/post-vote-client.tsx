@@ -1,3 +1,5 @@
+"use client";
+
 import { useCustomToast } from "@/hooks/user-custom-toast";
 import { usePrevious } from "@mantine/hooks";
 import { VoteType } from "@prisma/client";
