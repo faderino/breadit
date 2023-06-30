@@ -1,3 +1,4 @@
+import CommentsSection from "@/components/comments-section";
 import EditorOutput from "@/components/editor-output";
 import PostVoteServer from "@/components/post-vote/post-vote-server";
 import { buttonVariants } from "@/components/ui/button";
@@ -70,6 +71,15 @@ const Page = async ({ params }: PageProps) => {
           </h1>
 
           <EditorOutput content={post?.content ?? cachedPost.content} />
+
+          <Suspense
+            fallback={
+              <Loader2 className="h-5 w-5 animate-spin text-zinc-500" />
+            }
+          >
+            {/* @ts-expect-error server component */}
+            <CommentsSection postId={params.postId} />
+          </Suspense>
         </div>
       </div>
     </div>
