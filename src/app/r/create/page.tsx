@@ -2,13 +2,13 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useRouter } from "next/navigation";
-import { FC, useState } from "react";
-import { useMutation } from "@tanstack/react-query";
-import axios, { AxiosError } from "axios";
-import { CreateSubredditPayload } from "@/lib/validators/subreddit";
 import { toast } from "@/hooks/use-toast";
 import { useCustomToast } from "@/hooks/user-custom-toast";
+import { CreateSubredditPayload } from "@/lib/validators/subreddit";
+import { useMutation } from "@tanstack/react-query";
+import axios, { AxiosError } from "axios";
+import { useRouter } from "next/navigation";
+import { FC, useState } from "react";
 
 const Page: FC = () => {
   const [input, setInput] = useState<string>("");

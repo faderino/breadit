@@ -1,10 +1,10 @@
+import SubscribeLeaveToggle from "@/components/subscribe-leavel-toggle";
+import { buttonVariants } from "@/components/ui/button";
 import { getAuthSession } from "@/lib/auth";
 import { db } from "@/lib/db";
-import { notFound } from "next/navigation";
 import { format } from "date-fns";
-import SubscribeLeaveToggle from "@/components/subscribe-leavel-toggle";
 import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
+import { notFound } from "next/navigation";
 
 interface LayoutProps {
   children: React.ReactNode;

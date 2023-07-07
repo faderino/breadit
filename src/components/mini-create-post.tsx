@@ -1,11 +1,11 @@
 "use client";
 
+import { ImageIcon, Link2 } from "lucide-react";
 import { Session } from "next-auth";
 import { usePathname, useRouter } from "next/navigation";
-import UserAvatar from "./user-avatar";
-import { Input } from "./ui/input";
 import { Button } from "./ui/button";
-import { ImageIcon, Link2 } from "lucide-react";
+import { Input } from "./ui/input";
+import UserAvatar from "./user-avatar";
 
 interface MiniCreatePostProps {
   session: Session | null;

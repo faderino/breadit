@@ -1,9 +1,9 @@
-import { User } from "next-auth";
-import { FC } from "react";
-import { Avatar, AvatarFallback } from "./ui/avatar";
-import Image from "next/image";
-import { Icons } from "./icons";
 import { AvatarProps } from "@radix-ui/react-avatar";
+import { User } from "next-auth";
+import Image from "next/image";
+import { FC } from "react";
+import { Icons } from "./icons";
+import { Avatar, AvatarFallback } from "./ui/avatar";
 
 interface UserAvatarProps extends AvatarProps {
   user: Pick<User, "name" | "image">;
